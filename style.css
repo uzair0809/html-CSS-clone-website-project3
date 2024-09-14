@@ -1,0 +1,221 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+     width: 100%;
+    height: 100%;
+}
+main{
+    width: 100%;
+    height: 100%;
+    /* background-color: yellowgreen; */
+}
+nav{
+    width: 100%;
+    height: 10%;
+    /* background-color: tomato; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0vw 3vw;
+}
+.gola{
+    width: 1.5vw;
+    height: 1.5vw;
+    background-color: black;
+    border-radius: 50%;
+    /* margin-left: 0.1vw; */
+}
+
+#nav-partleft{
+    display: flex;
+}
+#nav-partright{
+    display: flex;
+    gap: 3vw;
+}
+#nav-partright h5 span{
+    margin-left: 2vw;
+    color: rgb(100, 100, 104);
+}
+#nav-partright h6{
+    display: none;
+}
+#nav2{
+    width: 100%;
+    height: 10%;
+    /* background-color: rgb(156, 36, 14); */
+    display: flex;
+    gap: 4vw;
+    align-items: center; 
+    padding: 0vw 3vw;
+}
+#nav2 h4{
+    text-transform: uppercase;
+    font-weight: 2vw;
+    font-weight: 500;
+}
+
+
+#text-content{
+    width: 100%;
+    height: 35%;
+    /* background-color: tan; */
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    
+}
+#text-content::-webkit-scrollbar{
+    background-color: transparent;
+    height: 0.5vw;
+}
+#text-content::-webkit-scrollbar-thumb{
+    background-color: orange;
+}
+
+
+.elem{
+    flex-shrink: 0;
+    height: 100%;
+    width: 50%;
+    /* background-color:aquamarine; */
+    /* border: 1px solid; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.elem h1{
+    font-size: 7vw;
+    font-weight: 300;
+}
+#image-content{
+    width: 100%;
+    height: calc(100% - 55%);
+    /* background-color: brown; */
+    display: flex;
+    overflow-x: auto;
+}
+#image-content::-webkit-scrollbar{
+    background-color: transparent;
+    height: 0.5vw;
+}
+#image-content::-webkit-scrollbar-thumb{
+    background-color: rgb(0, 0, 0);
+}
+
+#image-content img{
+    flex-shrink: 0;
+    width: 100%;
+    height: 98.8%;
+    object-fit: cover;
+    object-position: 0 10%;
+}
+
+@media (max-width:600px) {
+    nav{
+        width: 100%;
+        height: 10%;
+        /* background-color: tomato; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0vw 3vw;
+    }
+    .gola{
+        width: 3vw;
+        height: 3vw;
+        background-color: black;
+        border-radius: 50%;
+        /* margin-left: 0.1vw; */
+    }
+    
+    #nav-partleft{
+        display: flex;
+        align-items: center;
+    }
+    #nav-partright{
+        display: flex;
+        align-items: center;
+        gap: 3vw;
+    }
+    #nav-partright h5{
+        display: none;
+    }
+    #nav-partright h5:nth-child(1){
+        margin-right: 3vw;
+        display: initial;
+    }
+    #nav-partright h6{
+        display: initial;
+    }
+    #nav-partright h6 i{
+        font-size: 5vw;
+    }
+    
+
+    
+
+    #nav-partright h5 span{
+        
+        margin-left: 2vw;
+        color: rgb(100, 100, 104);
+    }
+    #nav2{
+        width: 100%;
+        height: 10%;
+        /* background-color: rgb(156, 36, 14); */
+        display: flex;
+        /* gap: 2vw; */
+        align-items: center; 
+        padding: 0vw 3vw;
+    }
+    #nav2 h4{
+        text-transform: uppercase;
+        font-size: 2.5vw;
+        font-weight: 400;
+    }
+    #text-content{
+        width: 100%;
+        height: 35%;
+        /* background-color: tan; */
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        
+    }
+    #text-content::-webkit-scrollbar{
+        background-color: transparent;
+        height: 1vw;
+    }
+    #text-content::-webkit-scrollbar-thumb{
+        background-color: orange;
+    }
+    
+    
+    .elem{
+        flex-shrink: 0;
+        height: 100%;
+        width: 80%;
+        /* background-color:aquamarine; */
+        /* border: 1px solid; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .elem h1{
+        font-size: 13vh;
+        font-weight: 500;
+    }
+    #image-content img{
+        flex-shrink: 0;
+        width: 100%;
+        height: 98.8%;
+        object-fit: cover;
+        object-position: 0 10%;
+    }
+}
